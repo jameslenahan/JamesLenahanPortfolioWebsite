@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
 // converting app.js into class component so we can use state
 class App extends React.Component {
 
@@ -30,9 +33,18 @@ class App extends React.Component {
   render() {
     return ( // p=0 sets it all the way to the side. Fluid = false pulls the text towards the middle.
         <Router>
-          <Container className="p-0" fluid={false}>
-            <p> Hi From React</p>
-
+          <Container className="p-0" fluid={true}>
+            <Navbar className="border-bottom" bg="transparent" expand="lg">
+              <Navbar.Brand> James Lenahan </Navbar.Brand>
+              <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+              <Navbar.Collapse id="navbar-toggle">
+                <Nav className="ml-auto">
+                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="/about">About</Link>
+                  <Link className="nav-link" to="/contact">Contact</Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
           </Container>
         </Router>
 
