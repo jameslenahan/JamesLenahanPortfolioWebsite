@@ -19,6 +19,7 @@ function Footer() {
                 </Row>
             </Container>
         </footer>
+        updates made here
 
     )
 }
