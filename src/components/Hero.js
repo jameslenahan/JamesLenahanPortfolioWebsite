@@ -18,6 +18,7 @@ function Hero(props) {
                 </Row>
             </Container>
         </Jumbotron>
+        Add pictures asnd api here
     );
 
 }
