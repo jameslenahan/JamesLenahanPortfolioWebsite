@@ -9,15 +9,14 @@ function AboutPage(props) {
             <Hero title={props.title} />
 
             <Content>
-                <p>Text here</p>
 
                 <p></p>
 
                 <p></p>
 
-                <p> <a href="" target="_blank" rel="noopener noreferrer">here</a></p>
+                <p> <a href="" target="_blank" rel="noopener noreferrer">Add in new link here!</a></p>
 
-                <p> <a href="https://github.com/jameslenahan?tab=repositories" target="_blank" rel="noopener noreferrer">here</a></p>
+                <p> <a href="https://github.com/jameslenahan?tab=repositories" target="_blank" rel="noopener noreferrer">Check out my Github here!</a></p>
             </Content>
         </div>
     );

@@ -13,7 +13,7 @@ function Footer() {
                     <Col className="p-0" md={3} sd={12}>
                         James Lenahan
                     </Col>
-                    <Col className="">
+                    <Col className="p-0 d-flex justify-content-end">
                          James made this site.
                     </Col>
                 </Row>
