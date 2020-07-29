@@ -39,6 +39,22 @@
 
 }
 .p-0 {
+  color: black
+}
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   color: black;
-  opacity: .8
+  text-align: center;
+  background-color: transparent;
+  font-size: 25px
+}
+
+.links {
+  color: black;
+  font-size: 30px;
+  justify-content: center;
+  text-align: justify
 }

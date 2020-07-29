@@ -16,8 +16,8 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: '',
-                    subTitle: '',
+                    title: 'james',
+                    subTitle: 'yes',
                  //    imgSrc: ,
                     link: 'm',
                     selected: false
