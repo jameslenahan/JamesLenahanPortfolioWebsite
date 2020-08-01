@@ -77,7 +77,7 @@ class Carousel extends React.Component {
             </Container>
         );
     }
-
+// add new carousel item here
 }
 
 export default Carousel;

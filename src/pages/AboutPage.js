@@ -15,13 +15,12 @@ function AboutPage(props) {
                     <Row className="justify-content-center py-5">
                         <Col md={5} sm={12}>
                             { props.title && <h1 className="display-3 font-weight-bolder">{props.title}</h1> }
+
                         </Col>
                     </Row>
                 </Container>
             </Jumbotron>
-            <p> <a className="links" href="https://www.linkedin.com/in/james-lenahan-9ba40682/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 
-            <p> <a className="links" href="https://github.com/jameslenahan?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></p>
 
         </div>
     );
@@ -29,3 +28,7 @@ function AboutPage(props) {
 }
 
 export default AboutPage;
+
+//                             <p> <a className="display-4" href="https://www.linkedin.com/in/james-lenahan-9ba40682/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+//
+//                             <p> <a className="display-4" href="https://github.com/jameslenahan?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></p>
