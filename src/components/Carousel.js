@@ -59,6 +59,7 @@ class Carousel extends React.Component {
             items
         });
     }
+    // make sure that this rotates properly
 
 
     makeItems = (items) => {
