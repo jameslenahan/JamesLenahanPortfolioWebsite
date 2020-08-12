@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import '../App.css'
+import Hero from "../components/Hero";
+import Carousel from "../components/Carousel";
 
 function AboutPage(props) {
 
@@ -12,12 +14,10 @@ function AboutPage(props) {
         <div>
             <Jumbotron className="bg-transparent jumbotron-fluid p-0">
                 <Container fluid={true}>
-                    <Row className="justify-content-center py-5">
-                        <Col md={5} sm={12}>
-                            { props.title && <h1 className="display-3 font-weight-bolder">{props.title}</h1> }
-
-                        </Col>
-                    </Row>
+                    <div>
+                        <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
+                        <Carousel />
+                    </div>
                 </Container>
             </Jumbotron>
 
