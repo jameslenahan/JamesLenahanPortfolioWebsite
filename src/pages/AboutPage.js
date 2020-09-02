@@ -9,15 +9,12 @@ function AboutPage(props) {
             <Hero title={props.title} />
 
             <Content>
-                <p>Hello, my name is James. I'm a full stack engineer with experience in  React.</p>
+                <p>Hello, my name is James. I'm a full stack engineer with experience in Javascript & React/Redux, Ruby on Rails, and Python.</p>
 
-                <p>My dream is to one day start my own business and become an entrepreneur (currently working on some ideas).</p>
+                <p>My dream is to contribute to a meaningful product or service which makes differences in peoples lives.</p>
 
-                <p>I'm constantly learning new things. currently those things include gaining more experience withNode JS</p>
+                <p>I'm constantly learning new things, currently I am growing as a Python developer, and learning the ins and outs of Node.js.</p>
 
-                <p>My latest project<a href="https://devgrub.com" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage. Node JS. However, I will be rebuilding it using React in the coming months</p>
-
-                <p>When I'm not learning som. You can find those <a href="youtubelink" target="_blank" rel="noopener noreferrer">here</a></p>
             </Content>
         </div>
     );
