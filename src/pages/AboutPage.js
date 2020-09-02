@@ -1,34 +1,27 @@
 import React from 'react';
+import Hero from '../components/Hero';
 import Content from '../components/Content';
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import '../App.css'
-import Hero from "../components/Hero";
-import Carousel from "../components/Carousel";
 
 function AboutPage(props) {
 
     return(
         <div>
-            <Jumbotron className="bg-transparent jumbotron-fluid p-0">
-                <Container fluid={true}>
-                    <div>
-                        <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
-                        <Carousel />
-                    </div>
-                </Container>
-            </Jumbotron>
+            <Hero title={props.title} />
 
+            <Content>
+                <p>Hello, my name is James. I'm a full stack engineer with experience in  React.</p>
 
+                <p>My dream is to one day start my own business and become an entrepreneur (currently working on some ideas).</p>
+
+                <p>I'm constantly learning new things. currently those things include gaining more experience withNode JS</p>
+
+                <p>My latest project<a href="https://devgrub.com" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage. Node JS. However, I will be rebuilding it using React in the coming months</p>
+
+                <p>When I'm not learning som. You can find those <a href="youtubelink" target="_blank" rel="noopener noreferrer">here</a></p>
+            </Content>
         </div>
     );
 
 }
 
 export default AboutPage;
-
-//                             <p> <a className="display-4" href="https://www.linkedin.com/in/james-lenahan-9ba40682/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-//
-//                             <p> <a className="display-4" href="https://github.com/jameslenahan?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a></p>
