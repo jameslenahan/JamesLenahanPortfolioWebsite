@@ -1,10 +1,6 @@
 import React from 'react';
-
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
-import Hero from '../components/Hero';
-import Content from '../components/Content';
 import Axios from 'axios';
 
 class ContactPage extends React.Component {
@@ -70,10 +66,12 @@ class ContactPage extends React.Component {
     render() {
         return(
             <div>
-                <Hero title={this.props.title} />
+                <div title={this.props.title} />
 
-                <Content>
-                    <Form onSubmit={this.handleSubmit}>
+                <div class="container">
+                    <h2>Contact me now: </h2>
+                    <Form onSubmit={this.handleSubmit} >
+
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
@@ -100,7 +98,7 @@ class ContactPage extends React.Component {
                         {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
                         {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
                     </Form>
-                </Content>
+                </div>
             </div>
         );
     }
