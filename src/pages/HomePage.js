@@ -31,11 +31,14 @@ function HomePage(props) {
             </Draggable>
             <Draggable>
                 <div className="middlepane">
-                    <a className="link-1" href="https://github.com/jameslenahan">Check out my Github here </a>
-                    <a className="link-2" href="https://www.linkedin.com/in/james-lenahan-9ba40682/">Check out my LinkedIn here</a>
+                    <a className="link-1" href="https://github.com/jameslenahan">Github    </a>
+                    /
+                    <a className="link-2" href="https://www.linkedin.com/in/james-lenahan-9ba40682/">   LinkedIn</a>
 
                 </div>
+
             </Draggable>
+
             <Draggable>
             <div className="rightpane">
                 <ContactPage>
@@ -47,5 +50,5 @@ function HomePage(props) {
     );
 
 }
-// iopasjdgoij
+
 export default HomePage;
